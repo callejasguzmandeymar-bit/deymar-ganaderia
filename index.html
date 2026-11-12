@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganadería El Buen Campo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f5ed;
+    color: #263b28;
+}
+
+header {
+    background: #174d2b;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #286b3b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9ef9c;
+}
+
+section {
+    padding: 35px 7%;
+}
+
+h2 {
+    text-align: center;
+    color: #1d6032;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.inicio {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    margin: 25px auto;
+    max-width: 1100px;
+    padding: 30px;
+}
+
+.inicio img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px #0002;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.tarjeta h3 {
+    color: #246537;
+    margin: 10px;
+}
+
+.tarjeta p {
+    margin: 8px;
+    line-height: 1.5;
+}
+
+.info {
+    background: #dcebd8;
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 3px 10px #0002;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #23713a;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #174d2b;
+}
+
+#mensaje {
+    text-align: center;
+    color: #17652d;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #174d2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+@media(max-width:600px) {
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐄 GANADERÍA EL BUEN CAMPO 🐂</h1>
+    <p>Producción y crianza de ganado vacuno</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#ganado">Nuestro ganado</a>
+    <a href="#corrales">Corrales</a>
+    <a href="#alimentacion">Alimentación</a>
+    <a href="#pedidos">Pedidos</a>
+</nav>
+
+<section id="inicio">
+    <div class="inicio">
+        <h2>Bienvenidos a nuestra ganadería</h2>
+        <p>
+        Nuestra ganadería se dedica a la crianza y cuidado
+        de ganado vacuno. Contamos con 12 cabezas de ganado,
+        divididas en diferentes corrales para mantener una
+        buena organización, alimentación y cuidado.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1200"
+        alt="Ganado vacuno en el campo">
+    </div>
+</section>
+
+<section id="ganado">
+    <h2>🐄 Nuestro ganado vacuno</h2>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600"
+            alt="Vacas">
+            <h3>🐄 Vacas</h3>
+            <p><b>Cantidad:</b> 4 vacas</p>
+            <p>Se encargan de la reproducción y producción de leche.</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600"
+            alt="Ganado vacuno">
+            <h3>🐂 Toros</h3>
+            <p><b>Cantidad:</b> 4 toros</p>
+            <p>Son importantes para la reproducción y mejoramiento del ganado.</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600"
+            alt="Terneros">
+            <h3>🐮 Terneros</h3>
+            <p><b>Cantidad:</b> 4 terneros</p>
+            <p>Son las crías jóvenes que necesitan alimentación y cuidados especiales.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="corrales">
+    <h2>🏡 División de los corrales</h2>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <h3>Corral 1 🐄</h3>
+            <p>4 vacas</p>
+            <p>Espacio para descanso, alimentación y cuidado.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Corral 2 🐂</h3>
+            <p>4 toros</p>
+            <p>Espacio separado para mantener una buena organización.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Corral 3 🐮</h3>
+            <p>4 terneros</p>
+            <p>Espacio especial para las crías jóvenes.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="alimentacion">
+    <h2>🌾 Alimentación y consumo de agua</h2>
+
+    <div class="info">
+        <h3>🐄 Vacas</h3>
+        <p>Alimento: aproximadamente 10 a 15 kg diarios de forraje.</p>
+        <p>Agua: aproximadamente 40 a 70 litros diarios.</p>
+
+        <h3>🐂 Toros</h3>
+        <p>Alimento: aproximadamente 12 a 15 kg diarios de forraje.</p>
+        <p>Agua: aproximadamente 40 a 60 litros diarios.</p>
+
+        <h3>🐮 Terneros</h3>
+        <p>Alimento: aproximadamente 3 a 5 kg diarios de alimento sólido.</p>
+        <p>Agua: aproximadamente 10 a 20 litros diarios.</p>
+
+        <p>
+        <b>Importante:</b> Las cantidades son estimaciones y
+        pueden cambiar según el peso, la edad, el clima y
+        las necesidades de cada animal. Los terneros pequeños
+        también necesitan leche.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>📊 Inventario general</h2>
+
+    <div class="contenedor">
+        <div class="tarjeta">
+            <h3>12 cabezas</h3>
+            <p>Total de ganado vacuno.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>3 corrales</h3>
+            <p>Divididos por tipo de ganado.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🌾 Alimentación</h3>
+            <p>Forraje y alimento adecuado.</p>
+        </div>
+    </div>
+</section>
+
+<section id="pedidos">
+    <h2>📝 Realizar un pedido</h2>
+
+    <form id="formulario">
+
+        <label>Nombre del cliente:</label>
+        <input type="text" id="nombre"
+        placeholder="Escribe tu nombre" required>
+
+        <label>Teléfono:</label>
+        <input type="tel" id="telefono"
+        placeholder="Número de teléfono" required>
+
+        <label>¿Qué deseas pedir?</label>
+        <select id="producto" required>
+            <option value="">Selecciona un producto</option>
+            <option>Vaca</option>
+            <option>Toro</option>
+            <option>Ternero</option>
+            <option>Leche</option>
+        </select>
+
+        <label>Cantidad:</label>
+        <input type="number" id="cantidad"
+        min="1" placeholder="Cantidad que necesitas" required>
+
+        <label>Escribe tu pedido:</label>
+        <textarea id="detalle" rows="5"
+        placeholder="Escribe aquí los detalles de tu pedido..."></textarea>
+
+        <button type="submit">Enviar pedido 📩</button>
+
+        <p id="mensaje"></p>
+
+    </form>
+</section>
+
+<footer>
+    <h3>🐄 GANADERÍA EL BUEN CAMPO 🐂</h3>
+    <p>Calidad, cuidado y producción de ganado vacuno.</p>
+    <p>Gracias por visitar nuestra página.</p>
+</footer>
+
+<script>
+document.getElementById("formulario").addEventListener("submit",
+function(event) {
+
+    event.preventDefault();
+
+    let nombre = document.getElementById("nombre").value;
+    let telefono = document.getElementById("telefono").value;
+    let producto = document.getElementById("producto").value;
+    let cantidad = document.getElementById("cantidad").value;
+    let detalle = document.getElementById("detalle").value;
+
+    let pedido = {
+        nombre: nombre,
+        telefono: telefono,
+        producto: producto,
+        cantidad: cantidad,
+        detalle: detalle
+    };
+
+    let pedidos = JSON.parse(localStorage.getItem("pedidos")) || [];
+    pedidos.push(pedido);
+
+    localStorage.setItem("pedidos", JSON.stringify(pedidos));
+
+    document.getElementById("mensaje").innerHTML =
+    "✅ ¡Pedido registrado correctamente! Gracias por tu compra.";
+
+    document.getElementById("formulario").reset();
+});
+</script>
+
+</body>
+</html>
